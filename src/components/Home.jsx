@@ -1,6 +1,10 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
+import About from './About';
+import Contact from './Contact';
+import Services from './Services';
 
-export default function Home() {
+const Home = () => {
   return (
     <div>
         <section id="home">
@@ -10,17 +14,22 @@ export default function Home() {
                         <h1 className="display-4 fw-bolder mb-4 text-center text-white">Feels the Fresh Business Perspective</h1>
                         <p className="lead text-center fs-4 mb-5 text-white">Documentation and examples for Bootstrap’s powerful, responsive navigation header, the navbar. Includes support for branding, navigation, and more, including support for our collapse plugin.</p>
                         <div className="buttons d-flex justify-content-center">
-                            <button className="btn btn-light me-4 rounded-pill px-4 py-2">
+                            <NavLink to="/contact" className="btn btn-light me-4 rounded-pill px-4 py-2">
                                 Get Quote
-                            </button>
-                            <button className="btn btn-outline-light rounded-pill px-4 py-2">
+                            </NavLink>
+                            <NavLink to="/service" className="btn btn-outline-light rounded-pill px-4 py-2">
                                 Our Services
-                            </button>
+                            </NavLink>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <About/>
+        <Services/>
+        <Contact/>
     </div>
-  )
+  );
 }
+
+export default Home;
