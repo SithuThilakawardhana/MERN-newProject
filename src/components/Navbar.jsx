@@ -24,11 +24,13 @@ const Navbar = () => {
           <NavLink className="nav-link" to="/contact">Contact</NavLink>
         </li>
       </ul>
-      <NavLink className="navbar-brand fw-bolder fs-4 mx-auto" to="/">FINE ART</NavLink>
-      <button className="btn btn-outline-primary ms-auto px-4 rounded-pill">
-      <i className="fa-solid fa-right-to-bracket me-2"></i>Login</button>
-      <button className="btn btn-outline-primary ms-2 px-4 rounded-pill">
-      <i className="fa-solid fa-user-plus me-2"></i>Register</button>
+      <NavLink className="navbar-brand fw-bold fs-4 mx-auto" to="/">FINE ART</NavLink>
+      <NavLink to="/login" className="btn btn-outline-primary ms-auto px-4 rounded-pill">
+      <i className="fa-solid fa-right-to-bracket me-2"></i>Login</NavLink>
+      <NavLink to="/register" className="btn btn-outline-primary ms-2 px-4 rounded-pill">
+      <i className="fa-solid fa-user-plus me-2"></i>Register</NavLink>
+      <NavLink to="/dashboard" className="btn btn-outline-primary ms-2 px-4 rounded-pill">
+      <i className="fa-solid fa-user-plus me-2"></i>Dashboard</NavLink>
     </div>
   </div>
 </nav>
